@@ -319,7 +319,7 @@ RUN cd /tmp \
 # -----------------------#
 # https://www.lambdatest.com/support/docs/testing-locally-hosted-pages/
 # Layer size: medium: ~16 MB
-ENV LT_TUNNEL_URL="https://s3.amazonaws.com/lambda-tunnel" \
+ENV LT_TUNNEL_URL="http://downloads.lambdatest.com/tunnel/linux/64bit" \
     LT_TUNNEL_ZIP="LT_Linux.zip"
 RUN cd /tmp \
   && wget -nv "${LT_TUNNEL_URL}/${LT_TUNNEL_ZIP}" \
